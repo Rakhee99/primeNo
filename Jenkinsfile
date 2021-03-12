@@ -1,6 +1,6 @@
 node {
   stage('SCM checkout') {
-    git credentialsId: 'f461d2a6-f07b-491b-a9d7-b361cf79644d', url: 'https://github.com/Rakhee99/primeNo.git'
+    tool name: 'Default', type: 'git'
   }
   stage ('compile Package') {
     // get maven home
